@@ -3,22 +3,25 @@
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-09-17T05:30:00Z
+- **updated:** 2026-09-17T05:30:00Z (refreshed same day by Grok progress report)
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 
 ## What is true right now
 
 - 16 repos. 5 are live and clickable. 3 are empty shells.
-- founder-os PR #3 (Four Offer storefront) is **merged**. **Public storefront URL still not found.** Vercel emailed that `four-offer-launch` is available to import.
-- Cashh Radar production is **live**: `https://cashh-radar-web-production.up.railway.app/`
+- founder-os: Four Offer storefront code is still on **main** under `four-offer-launch/`. No open PRs on founder-os.
+- Public storefront URL still not found / not deployed as a live public shop. Do not claim a shop URL.
+- Cashh Radar production is **live and healthy**:
+  - `/api/health` → status ok, version 2.2.0, **535 opportunities**, **1 user**, organizations 0
+  - `/api/health/ready` → status ready (database, schema, production secret, secure cookie, HTTPS, support email all true)
 - Dumpster Atlas live: `https://nqcshihyfhthywpseilx.supabase.co/functions/v1/dumpster-atlas` (5 verified spots; issue #1 asks for 25).
 - Snarky How-To live: `https://nqcshihyfhthywpseilx.supabase.co/functions/v1/snarky-how-to` (Episode 002 is the open ticket).
 - F.S.A. arcade live: `https://anastaysia94-sudo.github.io/fish-shooter-arcade/`
-- F.S.A. open PRs: #36 (do not merge until emulator green), #45, #53.
-- HOSI: 6 draft PRs + 5 issues. Human review required. Frozen this week.
+- F.S.A. open PRs: #36 (emulator smoke for Android v12 — checks not green / pending; **leave open, do not merge**), #45, #53.
+- HOSI: 6 draft PRs + 5 issues. Human review required. Frozen this week. Do not merge HOSI drafts.
 - EGM4000 public deploy still blocked on Render billing (402).
-- HubSpot connector is connected but **missing CRM permissions** (needs reconnect).
-- Gmail works. This session: designer apps (Sharksfluence, Healthbuk, ProGrade), Valosan Webflow sprint pitch, Northern Frights **rejected** (not hiring). No PayPal purchase receipts. No store sales.
+- HubSpot connector is connected but **missing CRM permissions** (DEAL and most objects require reauthorization). Owner must reconnect HubSpot.
+- Gmail (last 24h search for PayPal / Railway / Render receipts): **no matching receipt threads**. No PayPal purchase receipts. No store sales claimed.
 
 ## California job-path facts
 
@@ -36,7 +39,7 @@
 
 ## Next human steps (in order)
 
-1. Deploy founder-os `four-offer-launch` (Vercel import email is waiting) and hit `/health` then `/ready`.
+1. Deploy founder-os `four-offer-launch` (Vercel or other host) and hit `/health` then `/ready`.
 2. Put PayPal **sandbox** keys in the host dashboard only (never git, never chat).
 3. One sandbox $19 buy: pay → file recorded → ZIP downloads → checksum matches.
 4. Then one live $19 buy.
@@ -44,4 +47,4 @@
 6. Reconnect HubSpot with CRM read/write if deal tracking is wanted.
 7. Tonight: HubSpot Academy customer-support course. Tomorrow: W-2 remote CS jobs.
 8. Leave HOSI and Anarchy frozen this week.
-9. Optional product work after shop: Dumpster Atlas 25 locations, Snarky Episode 002, F.S.A. PR #53/#45 review.
+9. Optional product work after shop: Dumpster Atlas 25 locations, Snarky Episode 002, F.S.A. PR #53/#45 review (not #36 until emulator green).
