@@ -1,0 +1,5 @@
+.env
+postiz.env
+*.secret
+*.pem
+*.key

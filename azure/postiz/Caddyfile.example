@@ -1,0 +1,11 @@
+{$POSTIZ_HOST} {
+  encode zstd gzip
+
+  handle_path /bridge/* {
+    reverse_proxy bridge:8787
+  }
+
+  handle {
+    reverse_proxy postiz:5000
+  }
+}

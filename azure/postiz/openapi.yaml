@@ -1,0 +1,362 @@
+openapi: 3.0.3
+info:
+  title: SmartPick Postiz Bridge
+  version: 1.0.0
+  description: >-
+    Stable AI-facing API for Postiz. The bridge maps these endpoints to the current
+    Postiz Public API and keeps the underlying Postiz API key server-side.
+servers:
+  - url: https://YOUR-POSTIZ-HOST/bridge
+security:
+  - bearerAuth: []
+paths:
+  /health:
+    get:
+      operationId: bridgeHealth
+      summary: Check bridge health
+      security: []
+      responses:
+        '200':
+          description: Bridge health
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  postizConfigured:
+                    type: boolean
+  /api/v1/channels:
+    get:
+      operationId: listConnectedChannels
+      summary: List connected social channels
+      description: Returns Postiz integrations. In the Postiz UI these are called channels.
+      responses:
+        '200':
+          description: Connected channels
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Channel'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+  /api/v1/posts/queue:
+    get:
+      operationId: getUpcomingQueue
+      summary: Get upcoming queued posts
+      description: >-
+        Reads Postiz posts for the requested UTC date range and returns posts whose
+        current state is QUEUE. If dates are omitted, the bridge uses now through 30 days ahead.
+      parameters:
+        - name: startDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+          description: UTC ISO-8601 start time.
+        - name: endDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+          description: UTC ISO-8601 end time.
+      responses:
+        '200':
+          description: Queued posts and effective range
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [posts, range]
+                properties:
+                  posts:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/QueuedPost'
+                  range:
+                    type: object
+                    properties:
+                      startDate:
+                        type: string
+                        format: date-time
+                      endDate:
+                        type: string
+                        format: date-time
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+  /api/v1/posts:
+    post:
+      operationId: createOrSchedulePost
+      summary: Create a draft, scheduled post, or immediate post
+      description: >-
+        Uses the current Postiz create-post payload. Resolve integration IDs with
+        listConnectedChannels before calling. Prefer draft for first-run or review workflows.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePostRequest'
+      responses:
+        '200':
+          description: Postiz accepted the post(s)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    postId:
+                      type: string
+                    integration:
+                      type: string
+        '400':
+          description: Invalid post payload
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '429':
+          description: Postiz create-post rate limit exceeded
+  /api/v1/media/from-url:
+    post:
+      operationId: uploadMediaFromUrl
+      summary: Import a public HTTPS media URL into Postiz
+      description: >-
+        Maps to Postiz POST /public/v1/upload-from-url. The source must be publicly
+        reachable without authentication and pass Postiz SSRF/MIME checks.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [url]
+              properties:
+                url:
+                  type: string
+                  format: uri
+      responses:
+        '200':
+          description: Imported Postiz media object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MediaItem'
+        '400':
+          description: Invalid or unreachable media URL
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+  /api/v1/whatsapp/send:
+    post:
+      operationId: sendWhatsAppMessage
+      summary: Send a permitted WhatsApp Cloud API message
+      description: >-
+        Optional adapter. This is business messaging, not a generic WhatsApp Channels publisher.
+        The bridge injects messaging_product=whatsapp and uses server-side Meta credentials.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [to, type]
+              additionalProperties: true
+              properties:
+                to:
+                  type: string
+                  description: Recipient identifier accepted by the configured WhatsApp Cloud API account.
+                type:
+                  type: string
+                  example: text
+                text:
+                  type: object
+                  additionalProperties: true
+      responses:
+        '200':
+          description: Meta accepted the message
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '503':
+          description: WhatsApp adapter is not configured
+  /api/v1/snapchat/package:
+    post:
+      operationId: createSnapchatHandoff
+      summary: Create a Snapchat user-share handoff package
+      description: >-
+        Snapchat is not treated as a headless Postiz publisher. This returns a package
+        for a mobile/browser Creative Kit handoff that the user completes.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [mediaUrl]
+              properties:
+                caption:
+                  type: string
+                mediaUrl:
+                  type: string
+                  format: uri
+                scheduledFor:
+                  type: string
+                  format: date-time
+      responses:
+        '200':
+          description: Handoff package
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  platform:
+                    type: string
+                    enum: [snapchat]
+                  caption:
+                    type: string
+                  mediaUrl:
+                    type: string
+                    format: uri
+                  scheduledFor:
+                    type: string
+                    nullable: true
+                  status:
+                    type: string
+                    enum: [requires-user-share]
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  responses:
+    Unauthorized:
+      description: Missing or invalid bridge bearer token
+  schemas:
+    Channel:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        identifier:
+          type: string
+          description: Postiz provider identifier such as x, instagram, threads, or telegram.
+        picture:
+          type: string
+          nullable: true
+        disabled:
+          type: boolean
+        profile:
+          type: string
+          nullable: true
+        customer:
+          type: object
+          nullable: true
+          additionalProperties: true
+    MediaItem:
+      type: object
+      required: [id, path]
+      properties:
+        id:
+          type: string
+        path:
+          type: string
+          format: uri
+    PostPart:
+      type: object
+      required: [content, image]
+      properties:
+        content:
+          type: string
+        image:
+          type: array
+          items:
+            $ref: '#/components/schemas/MediaItem'
+    IntegrationRef:
+      type: object
+      required: [id]
+      properties:
+        id:
+          type: string
+    ProviderSettings:
+      type: object
+      required: [__type]
+      additionalProperties: true
+      properties:
+        __type:
+          type: string
+          description: >-
+            Postiz provider type. Requested-project examples: x, linkedin, facebook,
+            instagram, instagram-standalone, threads, youtube, tiktok, telegram.
+    TargetPost:
+      type: object
+      required: [integration, value, settings]
+      properties:
+        integration:
+          $ref: '#/components/schemas/IntegrationRef'
+        value:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/PostPart'
+        settings:
+          $ref: '#/components/schemas/ProviderSettings'
+    CreatePostRequest:
+      type: object
+      required: [type, date, shortLink, tags, posts]
+      properties:
+        type:
+          type: string
+          enum: [draft, schedule, now]
+        date:
+          type: string
+          format: date-time
+          description: UTC ISO-8601 time. Ignored by Postiz for type=now.
+        shortLink:
+          type: boolean
+          default: false
+        tags:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        order:
+          type: string
+          nullable: true
+        inter:
+          type: number
+          nullable: true
+          description: Interval between post parts when supported.
+        posts:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/TargetPost'
+    QueuedPost:
+      type: object
+      additionalProperties: true
+      properties:
+        id:
+          type: string
+        content:
+          type: string
+        publishDate:
+          type: string
+          format: date-time
+        releaseURL:
+          type: string
+          nullable: true
+        state:
+          type: string
+          enum: [QUEUE]
+        integration:
+          type: object
+          additionalProperties: true
