@@ -1,0 +1,48 @@
+name: Validate Postiz Azure kit
+
+on:
+  push:
+    paths:
+      - 'azure/postiz/**'
+      - '.github/workflows/validate-postiz-azure.yml'
+  pull_request:
+    paths:
+      - 'azure/postiz/**'
+      - '.github/workflows/validate-postiz-azure.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate shell syntax
+        run: bash -n azure/postiz/scripts/*.sh
+
+      - name: Validate Node bridge syntax and behavior
+        working-directory: azure/postiz/bridge
+        run: |
+          npm run check
+          npm test
+
+      - name: Validate Compose interpolation and structure
+        run: >-
+          docker compose
+          --env-file azure/postiz/postiz.env.example
+          -f azure/postiz/docker-compose.azure.yml
+          config --quiet
+
+      - name: Parse YAML assets
+        run: |
+          ruby -e 'require "yaml"; YAML.safe_load(File.read("azure/postiz/openapi.yaml"), aliases: true); puts "OpenAPI YAML parses"'
+          ruby -e 'require "yaml"; YAML.safe_load(File.read("azure/postiz/dynamicconfig/development-sql.yaml"), aliases: true); puts "Temporal YAML parses"'
+
+      - name: Reject obvious committed token formats
+        run: |
+          if grep -RIE --exclude='*.md' --exclude='*.example' '(ghp_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9_-]{20,})' azure/postiz; then
+            echo 'Possible live secret committed.' >&2
+            exit 1
+          fi

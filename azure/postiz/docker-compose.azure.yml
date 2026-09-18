@@ -1,0 +1,190 @@
+services:
+  bridge:
+    build:
+      context: ./bridge
+    restart: unless-stopped
+    environment:
+      POSTIZ_BASE_URL: http://postiz:5000
+      POSTIZ_API_KEY: ${POSTIZ_API_KEY:-}
+      BRIDGE_API_TOKEN: ${BRIDGE_API_TOKEN:?BRIDGE_API_TOKEN is required}
+      PORT: 8787
+      WHATSAPP_PHONE_NUMBER_ID: ${WHATSAPP_PHONE_NUMBER_ID:-}
+      WHATSAPP_ACCESS_TOKEN: ${WHATSAPP_ACCESS_TOKEN:-}
+      WHATSAPP_VERIFY_TOKEN: ${WHATSAPP_VERIFY_TOKEN:-}
+      WHATSAPP_APP_SECRET: ${WHATSAPP_APP_SECRET:-}
+      WHATSAPP_GRAPH_VERSION: ${WHATSAPP_GRAPH_VERSION:-}
+    expose:
+      - "8787"
+    networks:
+      - postiz-network
+    depends_on:
+      postiz:
+        condition: service_healthy
+
+  caddy:
+    image: caddy:2.9-alpine
+    restart: unless-stopped
+    environment:
+      POSTIZ_HOST: ${POSTIZ_HOST:?POSTIZ_HOST is required}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile.example:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - postiz-network
+    depends_on:
+      postiz:
+        condition: service_healthy
+      bridge:
+        condition: service_started
+
+  postiz:
+    image: ghcr.io/gitroomhq/postiz-app:latest
+    restart: unless-stopped
+    environment:
+      MAIN_URL: ${MAIN_URL:?MAIN_URL is required}
+      FRONTEND_URL: ${FRONTEND_URL:?FRONTEND_URL is required}
+      NEXT_PUBLIC_BACKEND_URL: ${NEXT_PUBLIC_BACKEND_URL:?NEXT_PUBLIC_BACKEND_URL is required}
+      BACKEND_INTERNAL_URL: ${BACKEND_INTERNAL_URL:-http://localhost:3000}
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is required}
+      DATABASE_URL: ${DATABASE_URL:?DATABASE_URL is required}
+      REDIS_URL: ${REDIS_URL:?REDIS_URL is required}
+      TEMPORAL_ADDRESS: ${TEMPORAL_ADDRESS:-temporal:7233}
+      TEMPORAL_NAMESPACE: ${TEMPORAL_NAMESPACE:-default}
+      IS_GENERAL: ${IS_GENERAL:-true}
+      DISABLE_REGISTRATION: ${DISABLE_REGISTRATION:-false}
+      RUN_CRON: ${RUN_CRON:-true}
+      API_LIMIT: ${API_LIMIT:-90}
+      STORAGE_PROVIDER: ${STORAGE_PROVIDER:-local}
+      UPLOAD_DIRECTORY: ${UPLOAD_DIRECTORY:-/uploads}
+      NEXT_PUBLIC_UPLOAD_STATIC_DIRECTORY: ${NEXT_PUBLIC_UPLOAD_STATIC_DIRECTORY:-/uploads}
+      CLOUDFLARE_ACCOUNT_ID: ${CLOUDFLARE_ACCOUNT_ID:-}
+      CLOUDFLARE_ACCESS_KEY: ${CLOUDFLARE_ACCESS_KEY:-}
+      CLOUDFLARE_SECRET_ACCESS_KEY: ${CLOUDFLARE_SECRET_ACCESS_KEY:-}
+      CLOUDFLARE_BUCKETNAME: ${CLOUDFLARE_BUCKETNAME:-}
+      CLOUDFLARE_BUCKET_URL: ${CLOUDFLARE_BUCKET_URL:-}
+      CLOUDFLARE_REGION: ${CLOUDFLARE_REGION:-auto}
+      FACEBOOK_APP_ID: ${FACEBOOK_APP_ID:-}
+      FACEBOOK_APP_SECRET: ${FACEBOOK_APP_SECRET:-}
+      INSTAGRAM_APP_ID: ${INSTAGRAM_APP_ID:-}
+      INSTAGRAM_APP_SECRET: ${INSTAGRAM_APP_SECRET:-}
+      LINKEDIN_CLIENT_ID: ${LINKEDIN_CLIENT_ID:-}
+      LINKEDIN_CLIENT_SECRET: ${LINKEDIN_CLIENT_SECRET:-}
+      YOUTUBE_CLIENT_ID: ${YOUTUBE_CLIENT_ID:-}
+      YOUTUBE_CLIENT_SECRET: ${YOUTUBE_CLIENT_SECRET:-}
+      TIKTOK_CLIENT_ID: ${TIKTOK_CLIENT_ID:-}
+      TIKTOK_CLIENT_SECRET: ${TIKTOK_CLIENT_SECRET:-}
+      X_API_KEY: ${X_API_KEY:-}
+      X_API_SECRET: ${X_API_SECRET:-}
+      THREADS_APP_ID: ${THREADS_APP_ID:-}
+      THREADS_APP_SECRET: ${THREADS_APP_SECRET:-}
+      TELEGRAM_BOT_NAME: ${TELEGRAM_BOT_NAME:-}
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    volumes:
+      - postiz_config:/config
+      - postiz_uploads:/uploads
+    expose:
+      - "5000"
+    networks:
+      - postiz-network
+      - temporal-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "const r=require('http').get('http://localhost:5000/',res=>process.exit(res.statusCode<500?0:1));r.on('error',()=>process.exit(1));r.setTimeout(4000,()=>{r.destroy();process.exit(1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    depends_on:
+      temporal:
+        condition: service_healthy
+
+  temporal-elasticsearch:
+    image: elasticsearch:7.17.27
+    restart: unless-stopped
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: -Xms256m -Xmx256m
+      xpack.security.enabled: "false"
+      cluster.routing.allocation.disk.threshold_enabled: "true"
+      cluster.routing.allocation.disk.watermark.low: 512mb
+      cluster.routing.allocation.disk.watermark.high: 256mb
+      cluster.routing.allocation.disk.watermark.flood_stage: 128mb
+    expose:
+      - "9200"
+    networks:
+      - temporal-network
+    volumes:
+      - temporal_elasticsearch_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS 'http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=5s' || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+
+  temporal-postgresql:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: temporal
+      POSTGRES_PASSWORD: ${TEMPORAL_DB_PASSWORD:?TEMPORAL_DB_PASSWORD is required}
+    expose:
+      - "5432"
+    networks:
+      - temporal-network
+    volumes:
+      - temporal_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U temporal"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  temporal:
+    image: temporalio/auto-setup:1.28.1
+    restart: unless-stopped
+    environment:
+      DB: postgres12
+      DB_PORT: "5432"
+      POSTGRES_USER: temporal
+      POSTGRES_PWD: ${TEMPORAL_DB_PASSWORD:?TEMPORAL_DB_PASSWORD is required}
+      POSTGRES_SEEDS: temporal-postgresql
+      DYNAMIC_CONFIG_FILE_PATH: config/dynamicconfig/development-sql.yaml
+      ENABLE_ES: "true"
+      ES_SEEDS: temporal-elasticsearch
+      ES_VERSION: v7
+      TEMPORAL_NAMESPACE: ${TEMPORAL_NAMESPACE:-default}
+    expose:
+      - "7233"
+    networks:
+      - temporal-network
+    volumes:
+      - ./dynamicconfig:/etc/temporal/config/dynamicconfig:ro
+    depends_on:
+      temporal-postgresql:
+        condition: service_healthy
+      temporal-elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "temporal", "operator", "cluster", "health", "--address", "temporal:7233"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  postiz_config:
+  postiz_uploads:
+  temporal_postgres_data:
+  temporal_elasticsearch_data:
+  caddy_data:
+  caddy_config:
+
+networks:
+  postiz-network:
+  temporal-network:
