@@ -1,0 +1,94 @@
+name: Build and Smoke-Test PartyTeller Salary Assistant
+
+on:
+  push:
+    branches: [party-teller-salary-assistant-v2]
+  workflow_dispatch:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reconstruct source package
+        run: |
+          mkdir -p buildsrc
+          cat party-teller-build/source.part.* | tr -d '\n\r' | base64 -d > /tmp/PartyTellerSalaryAssistant_v2_Source.zip
+          unzip -q /tmp/PartyTellerSalaryAssistant_v2_Source.zip -d buildsrc
+          unzip -t /tmp/PartyTellerSalaryAssistant_v2_Source.zip > /tmp/source_zip_test.txt
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: JavaScript syntax smoke test
+        working-directory: buildsrc
+        run: node --check app/src/main/assets/app.js
+
+      - name: Source integrity smoke test
+        working-directory: buildsrc
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          js=Path('app/src/main/assets/app.js').read_text()
+          html=Path('app/src/main/assets/index.html').read_text()
+          manifest=Path('app/src/main/AndroidManifest.xml').read_text()
+          seed=js[js.index('const seedTasks='):js.index('const defaults=')]
+          assert 'ADU / Additional Documented Site' in seed
+          assert 'ADB / Additional Documented Site' not in seed
+          assert 'PartyTeller Salary Assistant' in manifest
+          assert '@drawable/ic_launcher' in manifest
+          required=['sendBoss','printReport','receiptFiles','taskEvidenceFiles','calcCable','submissionHistory','exportBackup']
+          for x in required:
+              assert x in js+html, x
+          assert len(js) > 50000
+          print('SOURCE_SMOKE_OK')
+          PY
+
+      - name: Android lint and APK build
+        working-directory: buildsrc
+        run: gradle :app:lintDebug :app:assembleDebug --stacktrace
+
+      - name: APK package verification
+        working-directory: buildsrc
+        run: |
+          APK=app/build/outputs/apk/debug/app-debug.apk
+          test -f "$APK"
+          unzip -t "$APK" >/tmp/unzip_test.txt
+          unzip -l "$APK" | grep -q 'classes.dex'
+          unzip -l "$APK" | grep -q 'assets/app.js'
+          unzip -l "$APK" | grep -q 'assets/brand_banner.svg'
+          unzip -l "$APK" | grep -q 'ic_launcher'
+          BT=$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          "$BT/aapt" dump badging "$APK" >/tmp/badging.txt
+          grep -q "package: name='com.partyteller.salary'" /tmp/badging.txt
+          grep -q "application-label:'PartyTeller Salary Assistant'" /tmp/badging.txt
+          cp "$APK" PartyTellerSalaryAssistant-v2.0.0.apk
+          {
+            echo 'PartyTeller Salary Assistant v2.0.0 — automated smoke test PASS'
+            echo '- Source ZIP integrity: PASS'
+            echo '- JavaScript syntax: PASS'
+            echo '- ADU correction in seeded records: PASS'
+            echo '- Android lint/build: PASS'
+            echo '- APK ZIP integrity: PASS'
+            echo '- classes.dex present: PASS'
+            echo '- branded SVG assets present: PASS'
+            echo '- custom launcher icon present: PASS'
+            echo '- package id: com.partyteller.salary'
+            echo '- launcher label: PartyTeller Salary Assistant'
+          } > PartyTellerSalaryAssistant_SMOKE_TEST.txt
+
+      - name: Upload tested APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: PartyTellerSalaryAssistant-v2-tested
+          path: |
+            buildsrc/PartyTellerSalaryAssistant-v2.0.0.apk
+            buildsrc/PartyTellerSalaryAssistant_SMOKE_TEST.txt
+          if-no-files-found: error
