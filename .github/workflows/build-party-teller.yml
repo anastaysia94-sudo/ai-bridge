@@ -17,6 +17,7 @@ jobs:
           cat party-teller-build/source.part.* | tr -d '\n\r' | base64 -d > /tmp/PartyTellerSalaryAssistant_v2_Source.zip
           unzip -q /tmp/PartyTellerSalaryAssistant_v2_Source.zip -d buildsrc
           unzip -t /tmp/PartyTellerSalaryAssistant_v2_Source.zip > /tmp/source_zip_test.txt
+          sed -i 's/import android.app.PrintManager;/import android.print.PrintManager;/' buildsrc/app/src/main/java/com/partyteller/salary/MainActivity.java
 
       - uses: actions/setup-java@v4
         with:
@@ -39,11 +40,13 @@ jobs:
           js=Path('app/src/main/assets/app.js').read_text()
           html=Path('app/src/main/assets/index.html').read_text()
           manifest=Path('app/src/main/AndroidManifest.xml').read_text()
+          java=Path('app/src/main/java/com/partyteller/salary/MainActivity.java').read_text()
           seed=js[js.index('const seedTasks='):js.index('const defaults=')]
           assert 'ADU / Additional Documented Site' in seed
           assert 'ADB / Additional Documented Site' not in seed
           assert 'PartyTeller Salary Assistant' in manifest
           assert '@drawable/ic_launcher' in manifest
+          assert 'import android.print.PrintManager;' in java
           required=['sendBoss','printReport','receiptFiles','taskEvidenceFiles','calcCable','submissionHistory','exportBackup']
           for x in required:
               assert x in js+html, x
