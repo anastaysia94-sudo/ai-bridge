@@ -4,6 +4,16 @@
 **Budget context:** approximately $3 available now.  
 **Rule:** exact-brand .com names outrank piles of cheap extensions when the .com is still unregistered.
 
+## 2026-09-19 correction — Z.com cart behavior
+
+- User tested Z.com directly and found the apparent $0.01 `.com` offer required a 3-year registration in the actual checkout flow for the desired domain.
+- Therefore **do not recommend Z.com as a usable penny one-year .com path** for the current ~$3 budget unless a future checkout independently proves otherwise.
+- Best currently verified one-year .com fallback: **IONOS at $1 for the first year**. IONOS's official $1-domain page says the current $1 price includes the fees that used to make its older 99-cent offer cost more.
+- Current official IONOS page shows `.com` at $1/year for 1 year, with standard renewal listed at $20/year.
+- No reputable official current offer was verified for a true **under-$1, one-year-only .com** without a multi-year or other material catch.
+
+---
+
 ## 2026-09-19 under-$1 registrar update
 
 ### Z.com — first checkout to try for exact .com names
