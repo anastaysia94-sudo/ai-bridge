@@ -1,3 +1,15 @@
+# Portfolio continuity update — 2026-09-19
+
+- **canonical all-project ledger:** [PORTFOLIO-MASTER-LEDGER.md](../PORTFOLIO-MASTER-LEDGER.md)
+- **current domain strategy:** [DOMAIN-STRATEGY.md](../DOMAIN-STRATEGY.md)
+- **hard correction:** `smartpickshop.dev` was an idea only and is **not owned**. Do not use it in architecture, URLs, DNS, email, or deployment.
+- **hard Founder Dynasty constraint:** customer-facing Founder Dynasty OS is to be hosted through **WordPress**.
+- **PTEDBoss continuity:** exact approved neon design/workflow must be preserved; do not replace requested edits with generic regeneration.
+- **graphics continuity:** when asked to split/crop/clean/resize/package an approved graphic, use the existing graphic rather than generating a substitute.
+- **new operating rule:** any project/idea mention, even a one-line seed, belongs in the master ledger and should not disappear merely because it lacks a repo.
+
+---
+
 # Shared AI state — SmartPickShop launch + CA income path
 
 - **account:** anastaysia94-sudo
