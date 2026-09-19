@@ -4,6 +4,37 @@
 **Budget context:** approximately $3 available now.  
 **Rule:** exact-brand .com names outrank piles of cheap extensions when the .com is still unregistered.
 
+## 2026-09-19 under-$1 registrar update
+
+### Z.com — first checkout to try for exact .com names
+- Official US pricing currently advertises **.com at $0.01 for the first year**.
+- Its one-year pricing selector shows $0.01 registration and $17.99 renewal.
+- Free WHOIS privacy and URL forwarding are advertised.
+- Unlike the current GoDaddy/Hostinger penny promotions, Z.com's public one-year table does not show a 3-year purchase requirement.
+- Final cart price, premium-domain status, eligibility, tax/payment-region rules, and availability still control the actual purchase.
+- Current RDAP checks on 2026-09-19 returned no registration record for: `founderdynasty.com`, `cashhradar.com`, `edugamemaster.com`, `egm4000.com`, and `smartpickshopholdings.com`.
+
+### Conditional penny offers
+- GoDaddy: $0.01 first-year .com headline currently requires a **3-year purchase** on the official US page; not suitable for a ~$3 total budget.
+- Hostinger: $0.01 first-year .com likewise requires a **3-year term**; not suitable for the current cash constraint.
+- IONOS: official .com intro price is **$1.00**, not under $1.
+
+### Cheap exact-name backup domains that appeared unregistered in RDAP
+- `founderdynasty.online`
+- `founderdynasty.xyz`
+- `smartpickshop.online`
+- `smartpickshop.shop`
+- `cashhradar.online`
+- `cashhradar.xyz`
+- `cashhradar.click`
+- `edugamemaster.online`
+- `edugamemaster.xyz`
+- `egm4000.xyz`
+
+Prefer exact-brand .com at Z.com for one cent if the checkout honors the public offer; cheap alternate TLDs are secondary/defensive domains, not substitutes for the best .com when the .com can be obtained within budget.
+
+---
+
 ## Ownership correction
 
 - `smartpickshop.dev` — **NOT OWNED. IDEA ONLY. DO NOT USE.**
