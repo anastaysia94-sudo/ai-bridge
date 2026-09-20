@@ -15,22 +15,22 @@
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-09-19 (Grok progress report check)
+- **updated:** 2026-09-20 (Grok progress report check)
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 - **tracker:** https://github.com/anastaysia94-sudo/ai-bridge/issues/1
 
-## What is true right now (checked 2026-09-19)
+## What is true right now (checked 2026-09-20)
 
 - founder-os: Four Offer storefront code is still on **main** under `four-offer-launch/`. No open PRs on founder-os.
 - Public storefront URL still not found / not deployed as a live public shop. Do not claim a shop URL.
-- Cashh Radar production is **live and healthy** (checked 2026-09-19):
+- Cashh Radar production is **live and healthy** (checked 2026-09-20):
   - `/api/health` → status ok, version 2.2.0, **535 opportunities**, **1 user**, organizations 0
   - `/api/health/ready` → status ready (database, schema, production secret, secure cookie, HTTPS, support email all true)
 - F.S.A. arcade live: `https://anastaysia94-sudo.github.io/fish-shooter-arcade/`
-- F.S.A. open PRs: #36 (emulator smoke for Android v12 — leave open; check status pending / no green emulator checks), #45 (dense graphics certification). Do not merge #36 until emulator checks are green.
+- F.S.A. open PRs: #36 (emulator smoke for Android v12 — leave open; android-emulator-smoke and android-release checks **failed** / red). #45 (dense graphics certification). Do not merge #36 until emulator checks are green.
 - HOSI: draft PRs still open. Human review required. Frozen. Do not merge HOSI drafts.
 - HubSpot connector is connected but **CRM is locked** (missing permissions). Owner must reconnect HubSpot.
-- Gmail (last 24h at 2026-09-19 Grok check): No PayPal, Railway, or Render receipts found.
+- Gmail (last 24h at 2026-09-20 Grok check): No PayPal, Railway, or Render receipts found.
 
 ## Azure Postiz social hub — in progress on branch
 
