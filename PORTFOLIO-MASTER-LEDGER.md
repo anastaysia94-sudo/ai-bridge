@@ -242,7 +242,10 @@
 - **Rule:** do not collapse into EGM4000; integrations require explicit boundaries.
 
 ## C05 — PTEDBoss / PartyTeller Employee Dashboard / PartyTeller Neon app
-- **Related repos/workflows:** `doubletap-rewards`, `fish-shooter-arcade`, historical workflow spillover in `Firek-clone` / `ai-bridge`.
+- **Canonical portfolio project:** P035 PTEDBoss / PartyTeller. This is a separate product from DoubleTap Rewards.
+- **Canonical repository direction:** dedicated `anastaysia94-sudo/ptedboss` repository is required/queued; it is not yet the active source home.
+- **Historical source location:** PTEDBoss was temporarily developed on branch `partyteller-neon-v3-exact` inside `anastaysia94-sudo/doubletap-rewards`. That location is archival/migration history only and does not establish project ownership.
+- **Boundary rule:** PTEDBoss branches, files, workflows, CI failures/successes, blockers, milestones, and release readiness must never be counted as DoubleTap Rewards status.
 - **Type:** payroll/time/location/receipt/job-workflow Android app family.
 - **Hard preservation rules:**
   - exact approved neon graphical design matters;
@@ -262,8 +265,9 @@
 - **Repo:** `anastaysia94-sudo/doubletap-rewards`.
 - **Type:** rewards/multi-app/games-related concept family.
 - **Known idea:** open multiple get-paid-to-play apps, scheduling/automation/battery/network/progress capture; no-ID preference.
-- **Current repo reality historically sparse;** workflow history may contain PTEDBoss/PartyTeller experiments.
-- **Rule:** audit branches/workflows before defining canonical product identity.
+- **Boundary:** PTEDBoss / PartyTeller is not part of DoubleTap Rewards. Historical PTEDBoss material on `partyteller-neon-v3-exact` is an archive/migration artifact only.
+- **Status rule:** evaluate DoubleTap from DoubleTap source and workflows on `main`; never import PTEDBoss CI history into DoubleTap status.
+- **GitHub correction:** DoubleTap `main` now documents this boundary, the PTEDBoss branch is labeled archive-only, and the PTEDBoss emulator workflow was removed from that repository branch.
 
 ## C08 — Firek-clone
 - **Repo:** `anastaysia94-sudo/Firek-clone`.
