@@ -15,17 +15,17 @@
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-09-26 (Grok progress report)
+- **updated:** 2026-09-27 (Grok progress report)
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 - **tracker:** https://github.com/anastaysia94-sudo/ai-bridge/issues/1
 
-## What is true right now (checked 2026-09-26)
+## What is true right now (checked 2026-09-27)
 
 - founder-os: Four Offer storefront code is still on **main** under `four-offer-launch/` (storefront = the $19 pack checkout pages and delivery code). Zero open PRs on founder-os.
-- Cashh Radar production is **live and healthy** (checked 2026-09-26):
-  - `/api/health` → status ok, app Cashh Radar, version 2.2.0, **536 opportunities**, **1 user**, organizations 0
+- Cashh Radar production is **live and healthy** (checked 2026-09-27):
+  - `/api/health` → status ok, app Cashh Radar, version 2.2.0, **535 opportunities**, **1 user**, organizations 0; last job webhooks ok at 2026-09-27T16:05:38Z
   - `/api/health/ready` → status ready (all core checks true: database, schema, production secret, secure cookie, https, support email, smtp)
-- fish-shooter-arcade PR #36 (Certify F.S.A. Android v12 in emulator) is **already merged** into main by anastaysia94-sudo on 2026-09-25 11:50 UTC. Emulator and related checks were **green** (android-emulator-smoke success, android-release success, plus validate / validate-v9 / founder-backend-completion / cloud-account-completion / low-data-budget / cloud-sync). This session did not merge it; it was already merged when checked. No open PRs remain on that repo.
+- fish-shooter-arcade PR #36 (Certify F.S.A. Android v12 in emulator) is **already merged** into main by anastaysia94-sudo on 2026-09-25 11:50 UTC. This session did not merge it; it was already merged when checked. No open PRs remain on that repo.
 - HubSpot: permissions fail. Owner must **reconnect HubSpot** and grant CRM permissions. No deals listed.
 - Gmail: no Gmail connector available in this session, so last-24h PayPal / Railway / Render receipts could not be searched. Do not invent receipts. No mail sent.
 - No claim of sales, customers, or a public storefront URL.
