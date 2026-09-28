@@ -15,21 +15,21 @@
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-09-27 (Grok progress report)
+- **updated:** 2026-09-28 (Grok progress report)
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 - **tracker:** https://github.com/anastaysia94-sudo/ai-bridge/issues/1
 
-## What is true right now (checked 2026-09-27)
+## What is true right now (checked 2026-09-28)
 
-- founder-os: Four Offer storefront code is still on **main** under `four-offer-launch/` (storefront = the $19 pack checkout pages and delivery code). Zero open PRs on founder-os.
-- Cashh Radar production is **live and healthy** (checked 2026-09-27):
-  - `/api/health` → status ok, app Cashh Radar, version 2.2.0, **535 opportunities**, **1 user**, organizations 0; last job webhooks ok at 2026-09-27T16:05:38Z
+- founder-os: Four Offer storefront (the $19 pack checkout pages and delivery code) is still on **main** under `four-offer-launch/`. Zero open PRs on founder-os.
+- Cashh Radar production is **live and healthy** (checked 2026-09-28):
+  - `/api/health` → status ok, app Cashh Radar, version 2.2.0, **535 opportunities**, **1 user**, organizations 0; last job webhooks ok at 2026-09-28T16:03:11Z
   - `/api/health/ready` → status ready (all core checks true: database, schema, production secret, secure cookie, https, support email, smtp)
-- fish-shooter-arcade PR #36 (Certify F.S.A. Android v12 in emulator) is **already merged** into main by anastaysia94-sudo on 2026-09-25 11:50 UTC. This session did not merge it; it was already merged when checked. No open PRs remain on that repo.
-- HubSpot: permissions fail. Owner must **reconnect HubSpot** and grant CRM permissions. No deals listed.
+- fish-shooter-arcade PR #36 (Certify F.S.A. Android v12 in emulator) is **already merged** into main by anastaysia94-sudo on 2026-09-25 11:50 UTC. This session did not merge it; it was already merged when checked. Zero open PRs remain on that repo. Emulator-check merge rule does not apply because the PR is closed/merged.
+- HubSpot: DEAL read/write is REQUIRES_REAUTHORIZATION. Owner must **reconnect HubSpot**. No deals listed.
 - Gmail: no Gmail connector available in this session, so last-24h PayPal / Railway / Render receipts could not be searched. Do not invent receipts. No mail sent.
 - No claim of sales, customers, or a public storefront URL.
-- HOSI drafts were not merged.
+- HOSI drafts were not merged. No secrets committed.
 
 ## Evidence classes (plain English)
 
