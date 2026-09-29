@@ -1,4 +1,4 @@
-# Portfolio continuity update — 2026-09-28 (Grok re-audit)
+# Portfolio continuity update — 2026-09-29 (Grok)
 
 - **canonical all-project ledger:** [PORTFOLIO-MASTER-LEDGER.md](../PORTFOLIO-MASTER-LEDGER.md)
 - **current domain strategy:** [DOMAIN-STRATEGY.md](../DOMAIN-STRATEGY.md)
@@ -15,28 +15,21 @@
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-09-28 (Grok re-audit, morning PDT)
+- **updated:** 2026-09-29 (Grok morning PDT progress report)
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 - **tracker:** https://github.com/anastaysia94-sudo/ai-bridge/issues/1
 
-## What is true right now (checked 2026-09-28)
+## What is true right now (checked 2026-09-29)
 
-- GitHub user search returned **19** repos under anastaysia94-sudo (includes profile repo `anastaysia94-sudo` and `anastaysia94-sudo.github.io`, plus the product set).
-- founder-os: latest main commits 2026-09-27 (`chore(four-offer): trigger fresh Railway source deployment` and Trend Lab / Next.js notes). Four Offer code remains the money path. No public shop checkout proof.
-- Cashh Radar production is **live and healthy** (HTTP 200, checked this session):
-  - site root 200
-  - `/api/health` → status ok, app Cashh Radar, version **2.2.0**, **535 opportunities**, **1 user**, organizations 0
-  - `/api/health/ready` → status ready (database, schema, production secret, secure cookie, https, support email, smtp checks true)
-  - latest product commit 2026-09-27: `fix(ui): contain Cashh Radar mobile cockpit layout`
-- F.S.A. live Pages URL **200**: https://anastaysia94-sudo.github.io/fish-shooter-arcade/
-- fish-shooter-arcade PR **#36 is already merged** (closed). No open PRs on that repo in this search. This session did **not** merge #36. Emulator-CI merge rule: do not merge a new #36-style PR without green emulator CI.
-- Dumpster Atlas live URL **200**. Open draft PR #3 (illustrated collector UI).
-- Snarky How-To live URL **200**. Open PR #3 (episodes 003–007 packages).
-- Founder OS Railway app **200** (sign-in required): https://founder-dynasty-os-web-production.up.railway.app
-- HubSpot: DEAL / CONTACT / COMPANY read = **REQUIRES_REAUTHORIZATION**. CRM is still locked. No deals listed. Do not invent CRM data.
-- Gmail: **no Gmail connector in this session.** Could not search last-7-day PayPal / job / Vercel / Railway mail. Do not invent receipts. Do not re-pitch Northern Frights.
-- Open PRs still frozen / waiting human: HOSI drafts #6–#11; AudioHardcore #4 draft; doubletap-rewards #2 draft; dumpsteratlas #3 draft; snarkyhowtos #3; ai-bridge #2.
-- No claim of sales, customers, or a public Four Offer storefront URL.
+- founder-os **main** still contains the Four Offer storefront (`four-offer-launch/` folder plus later four-offer commits through 2026-09-27 `chore(four-offer): trigger fresh Railway source deployment`).
+- founder-os **open PRs: none** (search and list both returned empty).
+- fish-shooter-arcade PR **#36 is already merged** (merged 2026-09-25). It is not open. This session did **not** merge it. Rule remains: do not merge a new emulator-cert PR unless emulator checks are green.
+- Cashh Radar production checked this session:
+  - `/api/health` → status **ok**, app Cashh Radar, version **2.2.0**, **537 opportunities**, **1 user**, organizations 0
+  - `/api/health/ready` → status **ready** (database, schema, production secret, secure cookie, https, support email, smtp checks true)
+- **Do not claim sales.** No public shop checkout proof this session.
+- HubSpot deals: connector returned **reconnect required** (CRM permissions missing). No deals listed. Do not invent CRM data.
+- Gmail: **no Gmail connector in this session.** Could not search last-24h PayPal / Railway / Render receipts. No mail sent. Do not invent receipts.
 - HOSI drafts were not merged. No secrets committed.
 
 ## Evidence classes (plain English)
