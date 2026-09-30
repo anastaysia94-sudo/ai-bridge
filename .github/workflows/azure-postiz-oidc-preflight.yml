@@ -1,0 +1,47 @@
+name: Azure Postiz OIDC preflight
+
+on:
+  push:
+    paths:
+      - '.github/workflows/azure-postiz-oidc-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Azure OIDC secret names exist
+        shell: bash
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        run: |
+          missing=0
+          for name in AZURE_CLIENT_ID AZURE_TENANT_ID AZURE_SUBSCRIPTION_ID; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is not configured in this repository."
+              missing=1
+            fi
+          done
+          exit "$missing"
+
+      - name: Azure login with OIDC
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Read-only subscription preflight
+        shell: bash
+        run: |
+          az account show --query '{name:name,id:id,state:state,tenantId:tenantId,user:user.name}' -o json
+          az group list --query '[].{name:name,location:location}' -o table
+          echo "OIDC preflight only: no Azure resources were created or modified."
