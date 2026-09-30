@@ -1,4 +1,4 @@
-# Portfolio continuity update — 2026-09-29 (Grok)
+# Portfolio continuity update — 2026-09-30 (Grok)
 
 - **canonical all-project ledger:** [PORTFOLIO-MASTER-LEDGER.md](../PORTFOLIO-MASTER-LEDGER.md)
 - **current domain strategy:** [DOMAIN-STRATEGY.md](../DOMAIN-STRATEGY.md)
@@ -15,20 +15,20 @@
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-09-29 (Grok morning PDT progress report)
+- **updated:** 2026-09-30 (Grok morning PDT progress report)
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 - **tracker:** https://github.com/anastaysia94-sudo/ai-bridge/issues/1
 
-## What is true right now (checked 2026-09-29)
+## What is true right now (checked 2026-09-30)
 
-- founder-os **main** still contains the Four Offer storefront (`four-offer-launch/` folder plus later four-offer commits through 2026-09-27 `chore(four-offer): trigger fresh Railway source deployment`).
-- founder-os **open PRs: none** (search and list both returned empty).
+- founder-os **main** still contains the Four Offer storefront (`four-offer-launch/` folder, including README, server, PayPal order code, public storefront, and ACCEPTANCE_2026-09-30.md).
+- founder-os **open PRs: none** (list and search both empty).
 - fish-shooter-arcade PR **#36 is already merged** (merged 2026-09-25). It is not open. This session did **not** merge it. Rule remains: do not merge a new emulator-cert PR unless emulator checks are green.
 - Cashh Radar production checked this session:
-  - `/api/health` → status **ok**, app Cashh Radar, version **2.2.0**, **537 opportunities**, **1 user**, organizations 0
+  - `/api/health` → status **ok**, app Cashh Radar, version **2.2.0**, **535 opportunities**, **1 user**, organizations 0
   - `/api/health/ready` → status **ready** (database, schema, production secret, secure cookie, https, support email, smtp checks true)
 - **Do not claim sales.** No public shop checkout proof this session.
-- HubSpot deals: connector returned **reconnect required** (CRM permissions missing). No deals listed. Do not invent CRM data.
+- HubSpot deals: connector returned **reconnect required** (CRM permissions missing, including deals.read). No deals listed. Do not invent CRM data.
 - Gmail: **no Gmail connector in this session.** Could not search last-24h PayPal / Railway / Render receipts. No mail sent. Do not invent receipts.
 - HOSI drafts were not merged. No secrets committed.
 
