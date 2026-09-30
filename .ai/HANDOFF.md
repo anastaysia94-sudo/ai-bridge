@@ -4,7 +4,7 @@
 assistant: Grok
 repo: anastaysia94-sudo/ai-bridge
 branch: main
-when: 2026-09-29
+when: 2026-09-30
 ```
 
 Plain-English SmartPickShop progress report completed.
@@ -13,7 +13,7 @@ Done this session:
 - Read STATE.md and HANDOFF.md first.
 - founder-os: Four Offer storefront still on **main**. Open PRs: **none**.
 - fish-shooter-arcade PR #36: already merged 2026-09-25; left as-is. Did not merge anything this session.
-- Cashh Radar `/api/health` ok, version 2.2.0, **537 opportunities**, **1 user**. `/api/health/ready` ready. No sales claimed.
+- Cashh Radar `/api/health` ok, version 2.2.0, **535 opportunities**, **1 user**. `/api/health/ready` ready. No sales claimed.
 - Gmail last 24h: connector **not available**. No PayPal / Railway / Render receipts searched. No mail sent.
 - HubSpot deals: **reconnect HubSpot** (permissions fail). No fake CRM data.
 - Updated STATE.md and HANDOFF.md. No secrets committed. Did not merge HOSI drafts.
