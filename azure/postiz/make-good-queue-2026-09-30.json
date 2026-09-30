@@ -1,0 +1,449 @@
+{
+  "campaign": "What Could You Offer Online Today?",
+  "owner": "SmartPickShop Holdings",
+  "createdAt": "2026-09-30",
+  "purpose": "Recovery queue for five verified zero-publication runs; 10 unique posts per run.",
+  "canonicalBaseUrl": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/",
+  "rules": {
+    "total": 50,
+    "runs": 5,
+    "postsPerRun": 10,
+    "instagramPerRun": 5,
+    "threadsPerRun": 5,
+    "instagramHashtagMax": 5,
+    "noSubstantiallyDuplicateCopyWithinDays": 7,
+    "onlyOfficialOwnedAccountIntegrations": true
+  },
+  "expectedAccounts": {
+    "instagram": "anastaysiag",
+    "threads": "smart.pick.shop",
+    "facebookPage": "SmartpickShop Holdings"
+  },
+  "items": [
+    {
+      "run": 1,
+      "slot": 1,
+      "platform": "instagram",
+      "angle": "privacy",
+      "caption": "Prefer a lower-profile start? Sell the result instead of your life story. Clear scope, turnaround time, price, and delivery can do most of the explaining.\n\nPick one result, keep the scope small, and test it.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_01_privacy\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_01_privacy",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Sell%20The%20Result%2C%20Not%20Your%20Life%20Story%0ARun%201"
+    },
+    {
+      "run": 1,
+      "slot": 1,
+      "platform": "threads",
+      "angle": "privacy",
+      "caption": "Prefer a lower-profile start? Sell the result instead of your life story. Clear scope, turnaround time, price, and delivery can do most of the explaining. Turn that into one offer: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_01_privacy",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_01_privacy"
+    },
+    {
+      "run": 1,
+      "slot": 2,
+      "platform": "instagram",
+      "angle": "practical_start",
+      "caption": "A practical first offer is small enough to finish today: polish a bio, clean a spreadsheet, rewrite a listing, make a flyer, or research a short lead list.\n\nRun your idea through the picker and leave with one practical starting offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_02_practical_start\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_02_practical_start",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Start%20With%20One%20Finished%20Result%0ARun%201"
+    },
+    {
+      "run": 1,
+      "slot": 2,
+      "platform": "threads",
+      "angle": "practical_start",
+      "caption": "A practical first offer is small enough to finish today: polish a bio, clean a spreadsheet, rewrite a listing, make a flyer, or research a short lead list. Pick the smallest sellable version: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_02_practical_start",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_02_practical_start"
+    },
+    {
+      "run": 1,
+      "slot": 3,
+      "platform": "instagram",
+      "angle": "creator",
+      "caption": "Creators: your comments and DMs already contain product research. Repeated questions can become a template, audit, caption pack, content repurposing service, or mini-guide.\n\nUse the picker to narrow the idea into something a buyer can understand.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_03_creator\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_03_creator",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Creators%3A%20Package%20Repeated%20Requests%0ARun%201"
+    },
+    {
+      "run": 1,
+      "slot": 3,
+      "platform": "threads",
+      "angle": "creator",
+      "caption": "Creators: your comments and DMs already contain product research. Repeated questions can become a template, audit, caption pack, content repurposing service, or mini-guide. Make the deliverable obvious: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_03_creator",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_03_creator"
+    },
+    {
+      "run": 1,
+      "slot": 4,
+      "platform": "instagram",
+      "angle": "local_business",
+      "caption": "Local businesses usually care about visible outcomes: better listing copy, a cleaner menu, fresh social posts, a promo graphic, review-response drafts, or a refreshed lead list.\n\nOpen the picker and turn one useful skill into a testable offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_04_local_business\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_04_local_business",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Local%20Business%3A%20Sell%20A%20Ready-To-Use%20Result%0ARun%201"
+    },
+    {
+      "run": 1,
+      "slot": 4,
+      "platform": "threads",
+      "angle": "local_business",
+      "caption": "Local businesses usually care about visible outcomes: better listing copy, a cleaner menu, fresh social posts, a promo graphic, review-response drafts, or a refreshed lead list. Choose a practical starting point: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_04_local_business",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_04_local_business"
+    },
+    {
+      "run": 1,
+      "slot": 5,
+      "platform": "instagram",
+      "angle": "job_seeker",
+      "caption": "Job seekers already use marketable skills: research, writing, spreadsheets, scheduling, customer support, organization, and document cleanup. One of those can become a paid micro-service.\n\nUse the picker to choose a clear first deliverable instead of adding more ideas.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_05_job_seeker\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r01_ig_05_job_seeker",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Turn%20Work%20Skills%20Into%20A%20Micro-Service%0ARun%201"
+    },
+    {
+      "run": 1,
+      "slot": 5,
+      "platform": "threads",
+      "angle": "job_seeker",
+      "caption": "Job seekers already use marketable skills: research, writing, spreadsheets, scheduling, customer support, organization, and document cleanup. One of those can become a paid micro-service. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_05_job_seeker",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r01_th_05_job_seeker"
+    },
+    {
+      "run": 2,
+      "slot": 1,
+      "platform": "instagram",
+      "angle": "founder_feedback",
+      "caption": "Founder test: would a stranger understand exactly what they receive, when they receive it, and why it is useful? If not, shrink the offer until the answer is obvious.\n\nRun your idea through the picker and leave with one practical starting offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_01_founder_feedback\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_01_founder_feedback",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Shrink%20The%20Offer%20Until%20It%20Is%20Clear%0ARun%202"
+    },
+    {
+      "run": 2,
+      "slot": 1,
+      "platform": "threads",
+      "angle": "founder_feedback",
+      "caption": "Founder test: would a stranger understand exactly what they receive, when they receive it, and why it is useful? If not, shrink the offer until the answer is obvious. Pick the smallest sellable version: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_01_founder_feedback",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_01_founder_feedback"
+    },
+    {
+      "run": 2,
+      "slot": 2,
+      "platform": "instagram",
+      "angle": "concrete_result",
+      "caption": "Concrete offers are easier to evaluate. 'Rewrite your homepage headline and CTA today' gives the buyer a result; 'improve your brand presence' gives them a cloud.\n\nUse the picker to narrow the idea into something a buyer can understand.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_02_concrete_result\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_02_concrete_result",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Concrete%20Deliverables%20Beat%20Vague%20Promises%0ARun%202"
+    },
+    {
+      "run": 2,
+      "slot": 2,
+      "platform": "threads",
+      "angle": "concrete_result",
+      "caption": "Concrete offers are easier to evaluate. 'Rewrite your homepage headline and CTA today' gives the buyer a result; 'improve your brand presence' gives them a cloud. Choose a practical starting point: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_02_concrete_result",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_02_concrete_result"
+    },
+    {
+      "run": 2,
+      "slot": 3,
+      "platform": "instagram",
+      "angle": "share_referral",
+      "caption": "Know someone frozen at 'I want to make money online but I do not know what to sell'? Send them a practical offer picker instead of another motivational rabbit hole.\n\nOpen the picker and turn one useful skill into a testable offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_03_share_referral\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_03_share_referral",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Help%20Someone%20Choose%20One%20Offer%0ARun%202"
+    },
+    {
+      "run": 2,
+      "slot": 3,
+      "platform": "threads",
+      "angle": "share_referral",
+      "caption": "Know someone frozen at 'I want to make money online but I do not know what to sell'? Send them a practical offer picker instead of another motivational rabbit hole. Turn that into one offer: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_03_share_referral",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_03_share_referral"
+    },
+    {
+      "run": 2,
+      "slot": 4,
+      "platform": "instagram",
+      "angle": "three_questions",
+      "caption": "Three questions can uncover an offer: What problem do people already ask you about? What can you finish quickly? What proof can you show? Combine the answers into one small paid result.\n\nUse the picker to choose a clear first deliverable instead of adding more ideas.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_04_three_questions\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_04_three_questions",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=3%20Questions%20%E2%86%92%201%20Practical%20Offer%0ARun%202"
+    },
+    {
+      "run": 2,
+      "slot": 4,
+      "platform": "threads",
+      "angle": "three_questions",
+      "caption": "Three questions can uncover an offer: What problem do people already ask you about? What can you finish quickly? What proof can you show? Combine the answers into one small paid result. Make the deliverable obvious: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_04_three_questions",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_04_three_questions"
+    },
+    {
+      "run": 2,
+      "slot": 5,
+      "platform": "instagram",
+      "angle": "no_signup",
+      "caption": "You can validate an offer without building a funnel first. Define the result, price it simply, deliver it manually, and learn from the first real buyer.\n\nPick one result, keep the scope small, and test it.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_05_no_signup\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r02_ig_05_no_signup",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Test%20The%20Offer%20Before%20The%20Funnel%0ARun%202"
+    },
+    {
+      "run": 2,
+      "slot": 5,
+      "platform": "threads",
+      "angle": "no_signup",
+      "caption": "You can validate an offer without building a funnel first. Define the result, price it simply, deliver it manually, and learn from the first real buyer. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_05_no_signup",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r02_th_05_no_signup"
+    },
+    {
+      "run": 3,
+      "slot": 1,
+      "platform": "instagram",
+      "angle": "creator",
+      "caption": "If your audience keeps asking the same 'how did you do that?' question, package the answer into a small deliverable instead of answering from scratch every time.\n\nUse the picker to narrow the idea into something a buyer can understand.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_01_creator\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_01_creator",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Creators%3A%20Package%20Repeated%20Requests%0ARun%203"
+    },
+    {
+      "run": 3,
+      "slot": 1,
+      "platform": "threads",
+      "angle": "creator",
+      "caption": "If your audience keeps asking the same 'how did you do that?' question, package the answer into a small deliverable instead of answering from scratch every time. Make the deliverable obvious: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_01_creator",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_01_creator"
+    },
+    {
+      "run": 3,
+      "slot": 2,
+      "platform": "instagram",
+      "angle": "privacy",
+      "caption": "You can test a useful online service without turning your personal life into content. Keep the offer specific and let the work be the proof.\n\nOpen the picker and turn one useful skill into a testable offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_02_privacy\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_02_privacy",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Sell%20The%20Result%2C%20Not%20Your%20Life%20Story%0ARun%203"
+    },
+    {
+      "run": 3,
+      "slot": 2,
+      "platform": "threads",
+      "angle": "privacy",
+      "caption": "You can test a useful online service without turning your personal life into content. Keep the offer specific and let the work be the proof. Turn that into one offer: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_02_privacy",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_02_privacy"
+    },
+    {
+      "run": 3,
+      "slot": 3,
+      "platform": "instagram",
+      "angle": "local_business",
+      "caption": "Sell a local business something it can use this week: five ready-to-post updates, an improved Google profile description, a flyer, a service-page rewrite, or a contact-list cleanup.\n\nUse the picker to choose a clear first deliverable instead of adding more ideas.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_03_local_business\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_03_local_business",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Local%20Business%3A%20Sell%20A%20Ready-To-Use%20Result%0ARun%203"
+    },
+    {
+      "run": 3,
+      "slot": 3,
+      "platform": "threads",
+      "angle": "local_business",
+      "caption": "Sell a local business something it can use this week: five ready-to-post updates, an improved Google profile description, a flyer, a service-page rewrite, or a contact-list cleanup. Choose a practical starting point: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_03_local_business",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_03_local_business"
+    },
+    {
+      "run": 3,
+      "slot": 4,
+      "platform": "instagram",
+      "angle": "founder_feedback",
+      "caption": "Your first version should teach you something, not impress everybody. Make the offer small enough to sell and deliver, then use buyer feedback to decide what deserves expansion.\n\nPick one result, keep the scope small, and test it.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_04_founder_feedback\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_04_founder_feedback",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Shrink%20The%20Offer%20Until%20It%20Is%20Clear%0ARun%203"
+    },
+    {
+      "run": 3,
+      "slot": 4,
+      "platform": "threads",
+      "angle": "founder_feedback",
+      "caption": "Your first version should teach you something, not impress everybody. Make the offer small enough to sell and deliver, then use buyer feedback to decide what deserves expansion. Pick the smallest sellable version: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_04_founder_feedback",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_04_founder_feedback"
+    },
+    {
+      "run": 3,
+      "slot": 5,
+      "platform": "instagram",
+      "angle": "concrete_result",
+      "caption": "Swap vague promises for deliverables. '20 qualified local leads in a spreadsheet' is clearer than 'help with sales.' Buyers can understand what arrives.\n\nRun your idea through the picker and leave with one practical starting offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_05_concrete_result\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r03_ig_05_concrete_result",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Concrete%20Deliverables%20Beat%20Vague%20Promises%0ARun%203"
+    },
+    {
+      "run": 3,
+      "slot": 5,
+      "platform": "threads",
+      "angle": "concrete_result",
+      "caption": "Swap vague promises for deliverables. '20 qualified local leads in a spreadsheet' is clearer than 'help with sales.' Buyers can understand what arrives. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_05_concrete_result",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r03_th_05_concrete_result"
+    },
+    {
+      "run": 4,
+      "slot": 1,
+      "platform": "instagram",
+      "angle": "job_seeker",
+      "caption": "Your work history may contain an offer hiding in plain sight. If you can organize files, answer customers, prepare reports, research options, or polish documents, you can package that skill.\n\nOpen the picker and turn one useful skill into a testable offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_01_job_seeker\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_01_job_seeker",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Turn%20Work%20Skills%20Into%20A%20Micro-Service%0ARun%204"
+    },
+    {
+      "run": 4,
+      "slot": 1,
+      "platform": "threads",
+      "angle": "job_seeker",
+      "caption": "Your work history may contain an offer hiding in plain sight. If you can organize files, answer customers, prepare reports, research options, or polish documents, you can package that skill. Choose a practical starting point: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_01_job_seeker",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_01_job_seeker"
+    },
+    {
+      "run": 4,
+      "slot": 2,
+      "platform": "instagram",
+      "angle": "three_questions",
+      "caption": "Try this offer test: What do friends or coworkers ask you to fix? Which part takes you less than an hour? What would 'done' look like? That can become a starter service.\n\nUse the picker to choose a clear first deliverable instead of adding more ideas.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_02_three_questions\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_02_three_questions",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=3%20Questions%20%E2%86%92%201%20Practical%20Offer%0ARun%204"
+    },
+    {
+      "run": 4,
+      "slot": 2,
+      "platform": "threads",
+      "angle": "three_questions",
+      "caption": "Try this offer test: What do friends or coworkers ask you to fix? Which part takes you less than an hour? What would 'done' look like? That can become a starter service. Make the deliverable obvious: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_02_three_questions",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_02_three_questions"
+    },
+    {
+      "run": 4,
+      "slot": 3,
+      "platform": "instagram",
+      "angle": "practical_start",
+      "caption": "Your quickest offer may already be a task you can complete before dinner: formatting, research, copy cleanup, simple graphics, data entry, or account organization.\n\nPick one result, keep the scope small, and test it.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_03_practical_start\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_03_practical_start",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Start%20With%20One%20Finished%20Result%0ARun%204"
+    },
+    {
+      "run": 4,
+      "slot": 3,
+      "platform": "threads",
+      "angle": "practical_start",
+      "caption": "Your quickest offer may already be a task you can complete before dinner: formatting, research, copy cleanup, simple graphics, data entry, or account organization. Pick the smallest sellable version: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_03_practical_start",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_03_practical_start"
+    },
+    {
+      "run": 4,
+      "slot": 4,
+      "platform": "instagram",
+      "angle": "share_referral",
+      "caption": "If a friend has useful skills but no offer yet, share a tool that turns what they can already do into a smaller, testable starting point.\n\nRun your idea through the picker and leave with one practical starting offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_04_share_referral\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_04_share_referral",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Help%20Someone%20Choose%20One%20Offer%0ARun%204"
+    },
+    {
+      "run": 4,
+      "slot": 4,
+      "platform": "threads",
+      "angle": "share_referral",
+      "caption": "If a friend has useful skills but no offer yet, share a tool that turns what they can already do into a smaller, testable starting point. Turn that into one offer: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_04_share_referral",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_04_share_referral"
+    },
+    {
+      "run": 4,
+      "slot": 5,
+      "platform": "instagram",
+      "angle": "no_signup",
+      "caption": "No email list yet? Fine. Test the offer before building the audience machine. One clear service, one direct link, one straightforward delivery promise.\n\nUse the picker to narrow the idea into something a buyer can understand.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_05_no_signup\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r04_ig_05_no_signup",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Test%20The%20Offer%20Before%20The%20Funnel%0ARun%204"
+    },
+    {
+      "run": 4,
+      "slot": 5,
+      "platform": "threads",
+      "angle": "no_signup",
+      "caption": "No email list yet? Fine. Test the offer before building the audience machine. One clear service, one direct link, one straightforward delivery promise. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_05_no_signup",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r04_th_05_no_signup"
+    },
+    {
+      "run": 5,
+      "slot": 1,
+      "platform": "instagram",
+      "angle": "local_business",
+      "caption": "For local-business offers, replace vague marketing language with a finished deliverable. 'Five posts by tomorrow' is easier to buy than 'grow your digital presence.'\n\nUse the picker to choose a clear first deliverable instead of adding more ideas.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_01_local_business\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_01_local_business",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Local%20Business%3A%20Sell%20A%20Ready-To-Use%20Result%0ARun%205"
+    },
+    {
+      "run": 5,
+      "slot": 1,
+      "platform": "threads",
+      "angle": "local_business",
+      "caption": "For local-business offers, replace vague marketing language with a finished deliverable. 'Five posts by tomorrow' is easier to buy than 'grow your digital presence.' Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_01_local_business",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_01_local_business"
+    },
+    {
+      "run": 5,
+      "slot": 2,
+      "platform": "instagram",
+      "angle": "creator",
+      "caption": "Creator offer idea: take one thing you repeatedly make for yourself—hooks, thumbnails, captions, research notes, checklists—and turn it into a defined service or download.\n\nPick one result, keep the scope small, and test it.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_02_creator\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_02_creator",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Creators%3A%20Package%20Repeated%20Requests%0ARun%205"
+    },
+    {
+      "run": 5,
+      "slot": 2,
+      "platform": "threads",
+      "angle": "creator",
+      "caption": "Creator offer idea: take one thing you repeatedly make for yourself—hooks, thumbnails, captions, research notes, checklists—and turn it into a defined service or download. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_02_creator",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_02_creator"
+    },
+    {
+      "run": 5,
+      "slot": 3,
+      "platform": "instagram",
+      "angle": "concrete_result",
+      "caption": "A useful offer has an observable finish line: three edited product descriptions, a cleaned CSV, five ready-to-post captions, or a one-page competitor brief.\n\nRun your idea through the picker and leave with one practical starting offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_03_concrete_result\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_03_concrete_result",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Concrete%20Deliverables%20Beat%20Vague%20Promises%0ARun%205"
+    },
+    {
+      "run": 5,
+      "slot": 3,
+      "platform": "threads",
+      "angle": "concrete_result",
+      "caption": "A useful offer has an observable finish line: three edited product descriptions, a cleaned CSV, five ready-to-post captions, or a one-page competitor brief. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_03_concrete_result",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_03_concrete_result"
+    },
+    {
+      "run": 5,
+      "slot": 4,
+      "platform": "instagram",
+      "angle": "job_seeker",
+      "caption": "Between applications, test one skill you already use at work as a small service. Resume formatting, research, admin cleanup, spreadsheet help, or interview practice all have clear deliverables.\n\nUse the picker to narrow the idea into something a buyer can understand.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_04_job_seeker\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_04_job_seeker",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Turn%20Work%20Skills%20Into%20A%20Micro-Service%0ARun%205"
+    },
+    {
+      "run": 5,
+      "slot": 4,
+      "platform": "threads",
+      "angle": "job_seeker",
+      "caption": "Between applications, test one skill you already use at work as a small service. Resume formatting, research, admin cleanup, spreadsheet help, or interview practice all have clear deliverables. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_04_job_seeker",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_04_job_seeker"
+    },
+    {
+      "run": 5,
+      "slot": 5,
+      "platform": "instagram",
+      "angle": "founder_feedback",
+      "caption": "Before adding features, ask whether the current offer has a clear buyer, problem, deliverable, and turnaround. If one is fuzzy, fix that before building more.\n\nOpen the picker and turn one useful skill into a testable offer.\n\nhttps://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_05_founder_feedback\n\n#SmartPickShop #OnlineBusiness #SideHustle #DigitalProducts",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=instagram&utm_medium=organic_social&utm_campaign=2hr_launch&utm_content=makegood_r05_ig_05_founder_feedback",
+      "mediaUrl": "https://placehold.co/1080x1080/jpeg?text=Shrink%20The%20Offer%20Until%20It%20Is%20Clear%0ARun%205"
+    },
+    {
+      "run": 5,
+      "slot": 5,
+      "platform": "threads",
+      "angle": "founder_feedback",
+      "caption": "Before adding features, ask whether the current offer has a clear buyer, problem, deliverable, and turnaround. If one is fuzzy, fix that before building more. Try the offer picker: https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_05_founder_feedback",
+      "url": "https://anastaysia94-sudo.github.io/fish-shooter-arcade/traffic-strategy-v2/?utm_source=threads&utm_medium=social&utm_campaign=2hr_launch&utm_content=makegood_r05_th_05_founder_feedback"
+    }
+  ]
+}
