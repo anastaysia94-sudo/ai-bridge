@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {validateBackup,handoff} from './model.mjs';
+const p={id:'one',name:'Project A',repo:'https://github.com/owner/repo',goal:'Build',verified:'Tests passed: receipt',blockers:'Device offline',evidence:'receipt',next:'Test device',owner:'ChatGPT',history:[]};
+test('backup rejects duplicate identities and executable URL schemes',()=>{assert.throws(()=>validateBackup({version:1,projects:[p,p]}));assert.throws(()=>validateBackup({version:1,projects:[{...p,repo:'javascript:alert(1)'}]}));});
+test('restored active project must exist and handoff preserves evidence',()=>{const state=validateBackup({version:1,active:'missing',projects:[p]});assert.equal(state.active,'one');assert.match(handoff(p),/Device offline/);assert.match(handoff(p),/Tests passed: receipt/);assert.match(handoff(p),/Do not infer/);});

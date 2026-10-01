@@ -1,0 +1,17 @@
+import {fields,validateBackup,handoff} from './model.mjs';
+const key='ai-bridge:workspace:v1';let state={version:1,projects:[],active:''};const el=id=>document.getElementById(id);const status=text=>el('status').textContent=text;
+try{const raw=localStorage.getItem(key);if(raw)state=validateBackup(JSON.parse(raw));}catch{status('The saved workspace could not be read. Import a valid backup to restore it.');}
+const active=()=>state.projects.find(p=>p.id===state.active);
+function persist(){try{localStorage.setItem(key,JSON.stringify(state));return true;}catch{status('Device storage is unavailable or full. Export a backup before closing.');return false;}}
+function render(){const p=active();el('projects').replaceChildren(...state.projects.map(p=>{const o=document.createElement('option');o.value=p.id;o.textContent=p.name;return o;}));el('projects').value=state.active;
+ for(const f of fields){el(f).value=p?.[f]|| (f==='owner'?'Unassigned':'');el(f).disabled=!p;}el('record').querySelector('button').disabled=!p;el('preview').textContent=p?handoff(p):'Create a project to prepare your first handoff.';
+ el('history').replaceChildren(...(p?.history||[]).slice().reverse().map(h=>{const d=document.createElement('details');const s=document.createElement('summary');s.textContent=h.date;const text=document.createElement('pre');text.textContent=h.text;d.append(s,text);return d;}));}
+function create(){const p={id:crypto.randomUUID(),...Object.fromEntries(fields.map(f=>[f,''])),name:'Untitled project',owner:'Unassigned',history:[]};state.projects.push(p);state.active=p.id;persist();render();el('name').focus();}
+el('new').onclick=create;el('projects').onchange=e=>{state.active=e.target.value;persist();render();};
+el('remove').onclick=()=>{const p=active();if(!p||!confirm(`Remove ${p.name} and its local handoffs?`))return;state.projects=state.projects.filter(x=>x.id!==p.id);state.active=state.projects[0]?.id||'';persist();render();};
+el('record').onsubmit=e=>{e.preventDefault();const p=active();if(!p)return;for(const f of fields)p[f]=el(f).value.trim();p.updated=new Date().toISOString();p.history.push({date:p.updated,text:handoff(p)});p.history=p.history.slice(-30);const saved=persist();render();if(saved)status('Project saved on this device. Export a backup for another device.');};
+function download(text,name,type){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+el('export').onclick=()=>download(JSON.stringify(state,null,2),'ai-bridge-backup.json','application/json');el('download').onclick=()=>{if(active())download(handoff(active()),'handoff.md','text/markdown');};
+el('copy').onclick=async()=>{if(!active())return;try{await navigator.clipboard.writeText(handoff(active()));status('Handoff copied.');}catch{status('Clipboard unavailable. Use Download handoff instead.');}};
+el('import').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>8*1024*1024)throw new Error('Backup is too large.');const next=validateBackup(JSON.parse(await file.text()));if(state.projects.length&&!confirm('Replace this device workspace with the imported backup?'))return;state=next;const saved=persist();render();if(saved)status('Backup restored on this device.');}catch(error){status(error.message||'Could not import backup.');}finally{e.target.value='';}};
+render();
