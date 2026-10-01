@@ -1,3 +1,9 @@
+# Current execution — 2026-10-01 UTC
+
+Original cobalt/copper HD steampunk-neon identity and working local continuity workspace added under `web/`. Create/edit/select projects, dated handoff history, clipboard/download, schema-checked backup import/export implemented. Node model tests: 2 passed. Browser QA and deployment evidence are recorded in the portfolio release report. Local storage is device-specific; connected AI execution and cloud sync are not claimed. Newest user direction is eight distinct professional steampunk-neon identities. Founder OS uses its current standalone Next/Supabase implementation; older WordPress instructions below are historical and superseded.
+
+---
+
 # Handoff
 
 ```
