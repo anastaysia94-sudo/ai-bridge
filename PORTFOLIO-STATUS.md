@@ -67,7 +67,7 @@ This is the honest board. Code on GitHub is not the same as a product people can
 
 ### 11. Human Operating System Institute — draft PRs #6–#11. **Do not merge.** Freeze unless the owner reviews Lessons 1–20.
 ### 12. Anarchy-LLM — not deployed. Leave frozen.
-### 13. AI Bridge — shared memory. STATE / HANDOFF / PORTFOLIO-STATUS updated this session. Open PR #2 (archive note). Tracker issue #1.
+### 13. AI Bridge — shared memory. STATE / HANDOFF / PORTFOLIO-STATUS updated this session. PR #2 (archive note) merged 2026-10-01. Tracker issue #1.
 
 ---
 
