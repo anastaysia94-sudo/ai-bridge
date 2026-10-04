@@ -1,16 +1,16 @@
-# SmartPickShop progress — 2026-10-03 morning PDT (Grok)
+# SmartPickShop progress — 2026-10-04 morning PDT (Grok)
 
-Checked 2026-10-03 about 09:08 PDT / 16:08 UTC. No secrets. No sales claimed. HOSI drafts not merged.
+Checked 2026-10-04 about 09:07 PDT / 16:07 UTC. No secrets. No sales claimed. HOSI drafts not merged.
 
-- founder-os **main** still has the Four Offer storefront folder `four-offer-launch/` (README, server, PayPal order code, public storefront, acceptance note dated 2026-09-30). Open pull requests: **none**.
-- fish-shooter-arcade PR **#36 is already merged** (merged 2026-09-25 by anastaysia94-sudo). Emulator check `android-emulator-smoke` finished green, and the other 7 checks on that pull request also passed. It is not open. This session did **not** merge it. No open pull requests on that repo. Rule remains: do not merge a new emulator-cert pull request unless the emulator checks are green.
+- founder-os **main** still has the Four Offer storefront folder `four-offer-launch/` (README, server, PayPal order code, public storefront, readiness check, acceptance note dated 2026-09-30). Open pull requests (new since yesterday): **#24** all-rights-reserved licence, **#25** PWA install-path fix for GitHub Pages, **#26** maintenance notes. None merged this session.
+- fish-shooter-arcade PR **#36 is already merged** (merged 2026-09-25 by anastaysia94-sudo). Emulator check `android-emulator-smoke` finished green, and the other 7 checks on that pull request also passed. It is not open. This session did **not** merge it. Open on that repo (not emulator-cert): **#66** licence, **#67** maintenance notes. Rule remains: do not merge a new emulator-cert pull request unless the emulator checks are green.
 - Cashh Radar production:
-  - `/api/health` → status **ok**, app Cashh Radar, version **2.2.0**, database cashh_radar.db, schema version 6, **536 opportunities**, **1 user**, organizations 0. Last job `webhooks` status ok, finished 2026-10-03T16:08:18Z. Production secret and secure cookie flags true.
+  - `/api/health` → status **ok**, app Cashh Radar, version **2.2.0**, database cashh_radar.db, schema version 6, **536 opportunities**, **1 user**, organizations 0. Last job `webhooks` status ok, finished 2026-10-03T16:08:18Z (same timestamp as yesterday's note). Production secret and secure cookie flags true.
   - `/api/health/ready` → status **ready** (database, schema, production secret, secure cookie, https public url, support email, smtp-if-verification checks all true).
-  - Opportunity count is unchanged from the 2026-10-02 morning note (536). This is listing count, not sales.
+  - Opportunity count is unchanged from 2026-10-02 and 2026-10-03 (536). This is listing count, not sales.
 - **Do not claim sales.** No checkout receipt confirmed this session.
 - HubSpot deals: connector returned **reconnect HubSpot** (missing CRM permissions, including deals.read). No deals listed. Do not invent CRM data.
-- Gmail last 24h: connector worked. Targeted search (PayPal, Railway, or Render senders or subjects, newer than 1 day) returned **no threads**. A wider keyword search found unrelated mail only (Temu credit offers, a Chime account reminder, and a book-review offer that mentions PayPal). No PayPal, Railway, or Render receipts. No mail sent.
+- Gmail last 24h: connector worked. Searches for PayPal, Railway, or Render receipts after 2026-10-03 returned **no threads**. No mail sent.
 
 ## Next human steps (unchanged order)
 
@@ -19,15 +19,15 @@ Checked 2026-10-03 about 09:08 PDT / 16:08 UTC. No secrets. No sales claimed. HO
 3. One sandbox $19 buy: pay → file recorded → ZIP downloads → checksum matches.
 4. Then one live $19 buy.
 5. Reconnect HubSpot with CRM read if deal tracking is wanted.
-6. Leave HOSI frozen. Do not merge a new F.S.A. emulator-cert pull request without green emulator checks.
+6. Leave HOSI frozen. Do not merge a new F.S.A. emulator-cert pull request without green emulator checks. Review founder-os #24–#26 and fish-shooter #66–#67 before merging those docs/licence/PWA notes.
 
 — Grok
 
 ---
 
-# Previous check — 2026-10-02 morning PDT (Grok)
+# Previous check — 2026-10-03 morning PDT (Grok)
 
-Same storefront on main, no open founder-os pull requests, PR #36 already merged, Cashh 536 opportunities and 1 user, HubSpot reconnect, no PayPal/Railway/Render receipts.
+Same storefront on main, no open founder-os pull requests then, PR #36 already merged, Cashh 536 opportunities and 1 user, HubSpot reconnect, no PayPal/Railway/Render receipts.
 
 ---
 
@@ -36,15 +36,15 @@ Same storefront on main, no open founder-os pull requests, PR #36 already merged
 - **account:** anastaysia94-sudo
 - **active product:** Founder Dynasty OS Four Offer storefront + Cashh Radar live service
 - **last assistant:** Grok
-- **updated:** 2026-10-03 morning PDT progress report
+- **updated:** 2026-10-04 morning PDT progress report
 - **full board:** [PORTFOLIO-STATUS.md](../PORTFOLIO-STATUS.md)
 - **tracker:** https://github.com/anastaysia94-sudo/ai-bridge/issues/1
 
-## What is true right now (checked 2026-10-03 morning PDT)
+## What is true right now (checked 2026-10-04 morning PDT)
 
 - founder-os **main** still contains the Four Offer storefront (`four-offer-launch/` folder, including README, server, PayPal order code, public storefront, and ACCEPTANCE_2026-09-30.md).
-- founder-os **open PRs: none** (list and search both empty).
-- fish-shooter-arcade PR **#36 is already merged** (merged 2026-09-25). Emulator check `android-emulator-smoke` was green (success), plus 7 other checks passed. It is not open. This session did **not** merge it. Rule remains: do not merge a new emulator-cert PR unless emulator checks are green.
+- founder-os **open PRs: #24 licence, #25 PWA path fix, #26 maintenance notes.** Not merged this session.
+- fish-shooter-arcade PR **#36 is already merged** (merged 2026-09-25). Emulator check `android-emulator-smoke` was green (success), plus 7 other checks passed. It is not open. This session did **not** merge it. Open non-emulator PRs: #66 and #67.
 - Cashh Radar production checked this session:
   - `/api/health` → status **ok**, app Cashh Radar, version **2.2.0**, **536 opportunities**, **1 user**, organizations 0
   - `/api/health/ready` → status **ready** (database, schema, production secret, secure cookie, https, support email, smtp checks true)
