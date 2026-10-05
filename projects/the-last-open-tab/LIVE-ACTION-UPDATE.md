@@ -2,7 +2,7 @@
 
 ## Current state
 
-The original gothic-comedy story workstream has two draft play manuscripts, a 15-page scriptbook PDF, a 54.673-second narrated Episode 002 animatic at 1080×1920, a local continuity brief generator, a portable site preview and a full market-analysis draft with source limitations. A separate kit contains 40 distinct Codex session briefs and an offline copy/status dashboard. These are created artifacts, not evidence of public release, actual paid sales, guaranteed profit or 40 opened account chats. The user authorized broad work across repos; this source is prepared on the `ai/gothic-story-session-kit` review branch of `anastaysia94-sudo/ai-bridge`. Command Center is not callable in this session.
+The original gothic-comedy story workstream has two draft play manuscripts, a 15-page scriptbook PDF, a 54.673-second narrated Episode 002 animatic at 1080×1920, a local continuity brief generator, a portable site preview and a full market-analysis draft with source limitations. A separate kit contains 40 distinct Codex session briefs and an offline copy/status dashboard. These are created artifacts, not evidence of public release, actual paid sales, guaranteed profit or 40 opened account chats. The user authorized broad work across repos; this source is pushed and read back on the `ai/gothic-story-session-kit` review branch of `anastaysia94-sudo/ai-bridge`. Command Center is not callable in this session.
 
 ## Request ledger
 
@@ -23,7 +23,7 @@ The original gothic-comedy story workstream has two draft play manuscripts, a 15
 | $10,000 actual sales today / highly profitable project | BLOCKED | No non-test payment feed or buyer evidence; fictional ticket sales are not real revenue; profit not established |
 | Project Command Center update | BLOCKED | No callable app tool; exact update prepared in `COMMAND-CENTER-UPDATE-DRAFT.md`, not synced |
 | Google Drive Ledger / third video identity | BLOCKED | Drive not callable; user rejected Sparky as the third project, identity remains unknown |
-| GitHub shared-memory branch | COMPLETE, NOT YET VERIFIED | Local branch prepared; remote read/push read-back must be recorded after commit and push |
+| GitHub shared-memory branch | VERIFIED COMPLETE | `ai-bridge` review branch pushed; remote SHA and local SHA matched at `2d5da32184f03bb08e9a7fb36d1cda108c8170be` |
 | Network research access | BLOCKED | Supported config draft write returned `draft_not_editable` conflict; saved proposal local, no allowlist applied |
 
 ## Verified completions
@@ -54,4 +54,4 @@ Wrote Episode 002 and its production brief; integrated it into the series bible;
 
 ## Continuation point
 
-First verify the Git branch push/read-back. Then, if the user wants the first paid result, start session 01 (payment evidence) and session 03 (one local buyer niche), followed by the single private sample in session 05; do not report sales until a real payment is reconciled. For the fiction, rehearse and rights-review Episode 002, replace synthetic narration with consented performance, and test the final cut. When Drive and Command Center tools become callable, recover the correct third video project, sync the exact Command Center record and read back its status. When live web access is applied, gather a comparable dated Trends export and current media sources; update claims rather than inventing a ranking.
+The Git branch push/read-back is verified. If the user wants the first paid result, start session 01 (payment evidence) and session 03 (one local buyer niche), followed by the single private sample in session 05; do not report sales until a real payment is reconciled. For the fiction, rehearse and rights-review Episode 002, replace synthetic narration with consented performance, and test the final cut. When Drive and Command Center tools become callable, recover the correct third video project, sync the exact Command Center record and read back its status. When live web access is applied, gather a comparable dated Trends export and current media sources; update claims rather than inventing a ranking.
