@@ -1,0 +1,7 @@
+# Unapplied environment network proposal
+
+The user authorized pursuing research access. The current runtime has no custom allowed destinations. A supported environment-draft update was attempted and returned `draft_not_editable` / `CONFLICT`: the draft may be published or publication may be in progress. A subsequent read returned the same draft revision 1 with zero explicit egress rules. The change was **not saved or applied**, and current runtime access remains blocked. Do not route around the proxy or treat GitHub package-manager domains as permission for public web research.
+
+Proposed restricted host additions for source checks: trends.google.com, support.google.com, about.netflix.com, netflix.com, ea.com, playstation.com, xbox.com, warnerbros.com, universalpictures.com, boxofficemojo.com, the-numbers.com. Retain existing package-manager preset and any unrelated destinations when updating in a fresh editable draft. Use only the minimum hosts actually needed after checking the source plan. No secret values are required for public read-only pages. After a future environment editor saves and publishes an editable draft, recheck runtime `network_policy.state` and the actual HTTPS responses before claiming live research.
+
+Current platform action: open a new environment setup chat from environment settings if this draft remains uneditable, then carry this proposal into that chat. This is a platform configuration step; a local file cannot apply it.

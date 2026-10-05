@@ -1,3 +1,10 @@
+# 2026-10-04 PT — The Last Open Tab review branch
+
+- Branch `ai/gothic-story-session-kit` now contains original gothic-comedy source and 40 prepared Codex session briefs. See `projects/the-last-open-tab/README.md` and `projects/codex-session-kit-2026-10-04/README.md`.
+- All story media and $10,000 ticket sales are fictional/draft. No actual sales, live trends ranking, public release, or Command Center sync verified.
+- Network configuration draft update was rejected as uneditable; `NETWORK-DRAFT-PROPOSAL.md` preserves exact requested domains.
+- Review branch only; do not treat as published site or accepted production canon.
+
 # SmartPickShop progress — 2026-10-04 morning PDT (Grok)
 
 Checked 2026-10-04 about 09:07 PDT / 16:07 UTC. No secrets. No sales claimed. HOSI drafts not merged.

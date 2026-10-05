@@ -1,0 +1,55 @@
+{
+  "series": "The Last Open Tab",
+  "revision": 1,
+  "created_pacific": "2026-10-04",
+  "canon_rules": [
+    "Questions appear as projections when two people honestly disagree about an object's meaning.",
+    "Projection records observed actions, not thoughts or future events.",
+    "A door closes after evidence, uncertainty, and a decision are recorded.",
+    "A closed door causes a persistent concrete change.",
+    "The team cannot resolve conflict by humiliating the questioner."
+  ],
+  "characters": {
+    "Mara Vale": {
+      "role": "projectionist",
+      "goal": "find her missing mentor",
+      "flaw": "rushes to finish stories for others",
+      "arc": "learn to leave room for another person's answer"
+    },
+    "Ivo Reed": {
+      "role": "theatre director",
+      "goal": "keep the municipal night theatre open",
+      "flaw": "confuses a finished schedule with a complete answer",
+      "arc": "make room for uncertainty without losing responsibility"
+    },
+    "June Arroyo": {
+      "role": "archivist and dramaturg",
+      "goal": "public access without exposing private lives",
+      "flaw": "waits too long to act when records conflict",
+      "arc": "decide while showing limits of evidence"
+    }
+  },
+  "episode_history": [],
+  "open_threads": [
+    "Why did Mara's mentor disappear?",
+    "What are the projector's gaps?",
+    "How can the theatre survive?",
+    "Who sent the archive-control contract?"
+  ],
+  "source_trends_status": "not supplied or verified",
+  "source_stories_status": "not supplied",
+  "proposed_draft_episodes": [
+    {
+      "id": "001",
+      "title": "The Door in the Notes",
+      "status": "draft manuscript"
+    },
+    {
+      "id": "002",
+      "title": "The Price of Perfect",
+      "status": "draft manuscript",
+      "fictional_paid_sales_usd": 10000,
+      "real_sales_usd": "unverified"
+    }
+  ]
+}

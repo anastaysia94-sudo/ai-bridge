@@ -386,6 +386,19 @@
 - **Type:** visual-brand subproject family.
 - **Status:** preserve as asset-system concept when referenced.
 
+## D11 — The Last Open Tab / original gothic-comedy serial
+- **Type:** Original fictional play, short-form video and scriptbook workstream under SmartPickShop Holdings creative media.
+- **Source:** `projects/the-last-open-tab/` on branch `ai/gothic-story-session-kit` for review.
+- **Identity:** Mara Vale, Ivo Reed, June Arroyo and the Presenter; a theatre projector opens question doors when characters disagree about an object's meaning. This is new original work, not Snarky How-Tos, Oops Academy, Sparky or an adaptation of protected games.
+- **State (2026-10-04 PT):** Two draft play manuscripts, 15-page PDF, production briefs, portable blog and site drafts, one 54.673-second narrated animatic, a continuity CLI and a draft Episode 003 brief. Not published or commercially proven. The $10,000 ticket sale is fictional Episode 002 plot, not real revenue.
+- **Evidence boundary:** Gothic-media slate is editorial; current Google Trends top ten and market numbers are unverified because live web research was blocked.
+- **Next action:** rights/readability review, actor rehearsal and voice, current source-backed trends, then a real audience test. Keep receipts separate from fiction and forecast.
+
+## D12 — Codex session kit for SmartPickShop work
+- **Type:** Internal execution aid, not a separate customer product or 40 opened chats.
+- **Source:** `projects/codex-session-kit-2026-10-04/`; 40 copyable briefs and an offline dashboard.
+- **State:** files prepared and locally verified; sessions must be launched through the user's Codex interface. Work is planned across cash evidence, products, media, story, research, publishing and ledger reconciliation. No automation, sales or external messages are implied by the brief count.
+
 ---
 
 # E. Physical products, field systems, events, operations
